@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Link rel="stylesheet" href="/css/styles.css"/>
+    </head>
+    <body>
+        <h2>Users who live withing 50 mile of London</h2>
+        <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th> 
+        </tr>
+        {{#each user.filtered_users}}
+        <tr>
+            <td>{{this.first_name}}</td>
+            <td>{{this.last_name}}</td>
+        </tr>
+        {{/each}}
+        </table>
+
+        <h2>Users who live in London</h2>
+        <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th> 
+        </tr>
+        {{#each lon_user}}
+        <tr>
+            <td>{{this.first_name}}</td>
+            <td>{{this.last_name}}</td>
+        </tr>
+        {{/each}}
+        </table>
+    </body>  
+</html>
+
