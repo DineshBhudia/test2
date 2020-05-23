@@ -10,11 +10,11 @@ const calcDistance = (lat, lon) => {
         return false;
     }
     else {
-        var raLondlat = Math.PI * londLat / 180;
-        var radLat = Math.PI * lat / 180;
-        var theta = londLon - lon;
-        var radTheta = Math.PI * theta / 180;
-        var dist = Math.sin(raLondlat) * Math.sin(radLat) + Math.cos(raLondlat) * Math.cos(radLat) * Math.cos(radTheta);
+        const raLondlat = Math.PI * londLat / 180;
+        const radLat = Math.PI * lat / 180;
+        const theta = londLon - lon;
+        const radTheta = Math.PI * theta / 180;
+        let dist = Math.sin(raLondlat) * Math.sin(radLat) + Math.cos(raLondlat) * Math.cos(radLat) * Math.cos(radTheta);
         if (dist > 1) {
             dist = 1;
         }
