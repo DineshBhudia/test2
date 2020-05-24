@@ -48,7 +48,7 @@ const allUsers = (callback) =>{
     })
 }
 
-//get lonon users
+//get london users
 const londonUsers = (callback) =>{
     const url = "https://bpdts-test-app.herokuapp.com/city/London/users";
         request({url, json:true}, (error, {body})=>{        
