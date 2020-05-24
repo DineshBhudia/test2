@@ -6,7 +6,7 @@ const calcDistance = (lat, lon) => {
     const londLat = 51.5085300;
     const londLon = -0.1257400;
     //check we have param and are not the same
-    if ((!lat || !lon) || (lat == lon)) {
+    if ((!lat || !lon) || (lat === lon)) {
         return false;
     }
     else {
